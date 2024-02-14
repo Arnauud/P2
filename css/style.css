@@ -2,11 +2,28 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
+/* Design System */
 :root {
+    /* Color coding  */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --filter-bg-color2: #D9D9D9;
+
+    /* Card/Title */
+    --cardtitle-font-weight: 700;
+    --cardtitle-font-size: 1rem;
+    --cardtitle-line-height: 1.19rem;
+
+    /* Title/Section */
+    --titlesection-font-weight: 700;
+    --titlesection-font-size: 1.38rem;
+    --titlesection-line-height: 1.63rem;
+
+    /* Information */
+    --info-font-weight: 400;
+    --info-font-size: 1rem;
+    --info-line-height: 1.19rem;
 }
 
 .fa-solid {
@@ -16,13 +33,63 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 50px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    /* Don't want padding in header - hmm.. */
     box-sizing: border-box;
+}
+
+header {
+    display: flex; /* if already in "body" why again here */
+    flex-direction: row;
+    width: 1440px;
+    height: 79px;
+    /* padding: 0px 50px 0px 50px;  */
+    gap: 35px;
+    margin: 0;
+}
+
+#logo-header {
+    height:19px; 
+    width:61.09px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    width: 344px;
+    height: 35px; 
+    margin-left: auto;
+    /* left: 1096px; */
+}
+
+.nav {
+    display: flex; /* if already in "body" why again here */
+    flex-direction: row;
+    
+    padding: 0px 50px 0px 50px; /* Should use margin, padding? */
+    gap: 68px
+}
+
+.title {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    letter-spacing: 0em;
+    text-align: center;
+   }
+
+a:hover { /* anyway to merge with the above? damn.. it did it to all */
+    /* text-decoration-color: #0065FC; */
+    text-decoration-line: overline;
+    color: #0065FC;
 }
 
 a {
@@ -96,13 +163,13 @@ a {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    /* border-bottom-left-radius: 20px; */
 }
 
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
