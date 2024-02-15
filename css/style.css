@@ -69,6 +69,10 @@ table {
     --info-font-weight: 400;
     --info-font-size: 1rem;
     --info-line-height: 1.19rem;
+
+    /* Style Line in Nav Menu */
+    --navline-text-underline-offset: 0.25rem;
+    --navline-text-decoration-thickness: 0.125rem;
 }
 
 .fa-solid {
@@ -91,6 +95,7 @@ body {
 header {
     display: flex;
     height: 79px;
+    background :white;
 
 }
 
@@ -103,22 +108,22 @@ header {
     display: flex;
     gap: 68px;
     margin-left: auto;
-    margin-top: 16px;
 }
 
 .title {
     font-family: Raleway;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.78px;
+    font-size: var(--info-font-size);
+    font-weight: var(--info-font-weight);
+    line-height: var(--info-line-height);
     letter-spacing: 0em;
+    color: black;
     text-align: center;
+    padding-top: 16px;
    }
 
-a:hover { /* anyway to merge with the above? damn.. it did it to all */
-    /* text-decoration-color: #0065FC; */
-    text-decoration-line: overline;
-    color: #0065FC;
+.title:hover { 
+    color: var(--main-color);
+    border-top:2px solid var(--main-color);
 }
 
 a {
