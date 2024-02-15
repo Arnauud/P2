@@ -127,7 +127,7 @@ header {
 }
 .info-group{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 /* Search Bar */
 .search-bar{
@@ -139,6 +139,26 @@ header {
     gap: 24px;
 }
 
+.citysearch{
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.btn-search{
+    color: white;
+    background-color: #0065FC;
+    font-weight: bold;
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px;
+    gap: 10px
+    }
 
 /* Filter Bar */
 .filter-bar {
