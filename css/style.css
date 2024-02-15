@@ -129,11 +129,22 @@ header {
     display: flex;
     flex-direction: row;
 }
+/* Search Bar */
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px;
+    gap: 24px;
+}
 
 
+/* Filter Bar */
 .filter-bar {
     display: flex;
     height: 50px;
+    width: 758px;
     gap: 15px;
     justify-content: center;
 }
