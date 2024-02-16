@@ -133,7 +133,8 @@ header {
 .search-bar{
     display: flex;
     flex-direction: row;
-    height: 49px;    
+    height: 49px;
+    /* padding: 12px; Why does this padding not work for the group but works individually? */
 }
 
 #location{
