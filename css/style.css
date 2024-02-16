@@ -139,13 +139,23 @@ header {
     gap: 24px;
 }
 
+#location{
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px;
+    margin-right: 0;
+
+}
+
 .citysearch{
     color: black;
     background-color: white;
     font-size: 1.13rem;
     font-weight: 700;
     line-height: 1.31rem;
-    padding: 0.94rem 0px;
+    padding: 0.94rem 0.94px;
+    border-width: 1px 0px 1px 0px;
+    border-color: F2F2F2;
 }
 
 .btn-search{
@@ -189,12 +199,6 @@ header {
     font-weight: 700;
     Margin-top:10px;
 }
-    /* padding-top: 50px; */
-    /* line-height: 21px;
-    letter-spacing: 0em;
-    justify-content: center; */
- */
-
 
 a {
     color: inherit;
