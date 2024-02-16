@@ -133,17 +133,14 @@ header {
 .search-bar{
     display: flex;
     flex-direction: row;
-    height: 49px;
-    border-radius: 15px;
-    border: 1px;
-    gap: 24px;
+    height: 49px;    
 }
 
 #location{
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    border: 1px;
     margin-right: 0;
+    padding: 12px;
 
 }
 
@@ -152,10 +149,11 @@ header {
     background-color: white;
     font-size: 1.13rem;
     font-weight: 700;
-    line-height: 1.31rem;
-    padding: 0.94rem 0.94px;
-    border-width: 1px 0px 1px 0px;
-    border-color: F2F2F2;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    padding: 12px;
+    justify-content: center;
+    
 }
 
 .btn-search{
