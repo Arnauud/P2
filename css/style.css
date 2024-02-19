@@ -398,7 +398,44 @@ a {
     padding: 30px;
 }
 
+/***** Footer *****/
 
+
+.bottom-container{
+    /* display: flex;
+    flex-direction: row; */
+    background-color: var(--main-bg-color);
+    height: 163px;
+    width: 1165px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+}
+
+.bottom-left .bottom-center .bottom-right, a:first-child{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Raleway;
+    border-spacing: 40px;
+}
+
+.bottom-left, .bottom-center, .bottom-right {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Raleway;
+
+}
+
+.bottom-left{
+    justify-content: left;
+}
+/* .bottom-center{
+    justify-content: left;
+}
+.bottom-right{
+    justify-content: left;
+} */
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
