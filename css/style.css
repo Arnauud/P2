@@ -129,12 +129,25 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+.headline h1{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.headline h2{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
 /* Search Bar */
 .search-bar{
     display: flex;
     flex-direction: row;
     height: 49px;
-    /* padding: 12px; Why does this padding not work for the group but works individually? */
+    margin-bottom: 20px;
 }
 
 #location{
@@ -171,6 +184,10 @@ header {
     padding-left: 25px;
 }
 
+img.hidden-image{
+    display: none;
+}
+
 /* Filter Bar */
 .filter-bar {
     display: flex;
@@ -197,6 +214,19 @@ h3 {
 
 .filter-btn:hover{
     background-color: var(--filter-bg-color);
+}
+
+/*** Info Line ***/
+
+.info-line{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.info-line img{
+    padding-right: 7px;
 }
 
 a {
@@ -483,13 +513,91 @@ ul{
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        margin-top: 20px;
 
     }
     .nav{
-        margin-top: 20px;
+        margin: 0;
+        width: auto;
+        gap: 0;
     }
     .search-bar {
         margin-top: 50px;
     }
+    .title{
+    padding: 20px 85px 25px 95px;
+    }
 
+    .title:hover { 
+    color: var(--main-color);
+    border-bottom:2px solid var(--main-color);
+    border-top:none;
+    }
+.btn-search{
+    /* how to change word element to now being an icons? if statement in html ?? */
+    
+    }
+
+    .filter-bar{
+    flex-wrap: wrap;
+    margin-bottom: 125px;
+    justify-content: space-around;
+    }
+
+    .filter-btn {
+    width: 250px;
+    }
+
+    /*****/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards, .hebergements-cards, .activites-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+    .populaires-cards .card-title {
+        font-size: 14px;
+       }
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    .populaires-cards .card-rating {
+        margin-top: 75px;
+    }
+    section.hebergements {
+        background-color: white;
+    }
+    .activites-card .card {
+        margin-bottom: 30px;
+    }
+    .bottom-container {
+        background-color: var(--main-bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .bottom-center {
+        margin: 20px 0 20px 0;
+    }
+    div.btn-search{
+       display: none;
+    }
+    img.hidden-image{
+        display: block;
+        margin-left: -10px;
+    }
+    .citysearch {
+        padding-right: 100px;
+    }
 }
