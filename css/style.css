@@ -96,11 +96,11 @@ header {
     display: flex;
     height: 79px;
     background :white;
-
 }
 
 #logo-header {
     height:19px;
+    width: 61.09px;
     margin-top: 35px; 
 }
 
@@ -312,6 +312,10 @@ a {
     text-align: left;
 }
 
+.fa-solid{
+    padding-right: 5px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -361,17 +365,15 @@ a {
 /******** Activités à Marseille ********/
 
 .activites{
-    width: 1340px;
     margin-top: 50px;
-
 }
 
 .activites-card {
     margin-top: 30px;
+    margin-left: 20px;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 23% 23% 23% 23%;
     column-gap: 20px;
-
 }
 
 .activites-card .card{
@@ -400,20 +402,16 @@ a {
 
 /***** Footer *****/
 
-
 .bottom-container{
-    /* display: flex;
-    flex-direction: row; */
     background-color: var(--main-bg-color);
-    height: 163px;
-    width: 1165px;
-    align-items: center;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    margin: 50px 150px;
 
 }
 
-.bottom-left .bottom-center .bottom-right, a:first-child{
+.bottom-left .bottom-center .bottom-right, a:first-child ul{
     font-size: 18px;
     font-weight: 700;
     font-family: Raleway;
@@ -424,32 +422,31 @@ a {
     font-size: 16px;
     font-weight: 400;
     font-family: Raleway;
-
 }
 
-.bottom-left{
-    justify-content: left;
+ul{
+    padding: 10px;
 }
-/* .bottom-center{
-    justify-content: left;
-}
-.bottom-right{
-    justify-content: left;
-} */
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter-bar{
+        flex-wrap: wrap;
+        margin-bottom: 75px;
+    }
+    .filter-bar h3{
+        margin-top: 15px;
+        width: 100%;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
     .hebergements {
         width: 100%;
     }
-
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -472,9 +469,27 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activites-card img {
+        height: 270px;
+    }
+    .bottom-container {
+        margin: 50px 80px;
+    }   
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .nav{
+        margin-top: 20px;
+    }
+    .search-bar {
+        margin-top: 50px;
+    }
+
 }
