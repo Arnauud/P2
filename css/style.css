@@ -88,7 +88,7 @@ body {
 }
 
 .main-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -389,7 +389,8 @@ a {
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
+    /* need to have the stars at the bottom */
 }
 
 /******** Activités à Marseille ********/
@@ -436,8 +437,8 @@ a {
     background-color: var(--main-bg-color);
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    justify-items: center;
-    margin: 50px 150px;
+    padding: 15px;
+    margin: 50px 100px;
 
 }
 
@@ -500,7 +501,7 @@ ul{
         font-size: 13px;
     }
     .activites-card img {
-        height: 270px;
+        height: 160px;
     }
     .bottom-container {
         margin: 50px 80px;
@@ -508,6 +509,7 @@ ul{
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     header {
         align-items: center;
@@ -532,10 +534,6 @@ ul{
     color: var(--main-color);
     border-bottom:2px solid var(--main-color);
     border-top:none;
-    }
-.btn-search{
-    /* how to change word element to now being an icons? if statement in html ?? */
-    
     }
 
     .filter-bar{
