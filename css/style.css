@@ -75,20 +75,16 @@ table {
     --navline-text-decoration-thickness: 0.125rem;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
 
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 50px;
     max-width: 1440px;
 }
 
 .main-container {
-    width: 90%;
+    width: 93%;
     margin: auto;
 }
 
@@ -131,6 +127,7 @@ header {
 }
 
 .headline h1{
+    display: flex;
     font-weight: 700;
     font-size: 22px;
     margin-top: 30px;
@@ -142,7 +139,7 @@ header {
     margin-bottom: 30px;
 }
 
-/* Search Bar */
+/**** Search Bar ****/
 .search-bar{
     display: flex;
     flex-direction: row;
@@ -188,7 +185,7 @@ img.hidden-image{
     display: none;
 }
 
-/* Filter Bar */
+/**** Filter Bar ****/
 .filter-bar {
     display: flex;
     align-items: center;
@@ -215,6 +212,15 @@ h3 {
 .filter-btn:hover{
     background-color: var(--filter-bg-color);
 }
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.filter-btn .fa-solid {
+    padding-right: 5px;
+}
+
 
 /*** Info Line ***/
 
@@ -342,9 +348,6 @@ a {
     text-align: left;
 }
 
-.fa-solid{
-    padding-right: 5px;
-}
 
 /****** Populaires ***********/
 .populaires {
@@ -372,7 +375,7 @@ a {
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
@@ -505,51 +508,83 @@ ul{
     }
     .bottom-container {
         margin: 50px 80px;
-    }   
+    } 
 }
 
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {
+    #logo-header {
+        padding: 30px;       
+    }
+
     header {
         align-items: center;
         flex-direction: column;
         justify-content: center;
         margin-top: 20px;
-
     }
     .nav{
         margin: 0;
-        width: auto;
+        margin-bottom: 15px;
         gap: 0;
     }
     .search-bar {
-        margin-top: 50px;
+        margin-top: 10px;
     }
     .title{
-    padding: 20px 85px 25px 95px;
-    }
+        font-size: var(--cardtitle-font-size);
+        font-weight: var(--cardtitle-line-height);
+        line-height: 19px;
+        padding: 0 63px 25px 33px;
+        display: grid;
+    } 
 
     .title:hover { 
-    color: var(--main-color);
-    border-bottom:2px solid var(--main-color);
-    border-top:none;
+        color: var(--main-color);
+        border-bottom:2px solid var(--main-color);
+        border-top:none;
+    }
+
+    .info-group {
+        margin-top: 20px;
     }
 
     .filter-bar{
-    flex-wrap: wrap;
-    margin-bottom: 125px;
-    justify-content: space-around;
+        margin-bottom: 125px;
     }
 
-    .filter-btn {
-    width: 200px;
+    .filter-btn{
+        flex-wrap: wrap;
+        width: 162px;
+        font-size: 14px;
+    }
+
+
+    .info-line {
+        margin-top: 25px;
+        flex-wrap: nowrap;
     }
 
     /*****/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+
     }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        margin-top: 25px;
+    }
+
+    .hebergements-and-populaires .fa-solid {
+        width: 10px;
+    }
+
+    .hebergements-cards .card {
+        margin-top: 15px;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -570,8 +605,8 @@ ul{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    .populaires-cards .card-rating {
-        margin-top: 75px;
+   .populaires-cards .card-rating .fa-solid {
+        width: 10px;
     }
     section.hebergements {
         background-color: white;
@@ -583,7 +618,9 @@ ul{
         background-color: var(--main-bg-color);
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        width: 100%;
+        margin: 0 30px;
+
     }
     .bottom-center {
         margin: 20px 0 20px 0;
@@ -596,6 +633,10 @@ ul{
         margin-left: -10px;
     }
     .citysearch {
-        padding-right: 100px;
+        padding-right: 82px;
+    }
+    .fa-solid {
+        padding-right: 0px;
+
     }
 }
