@@ -147,12 +147,15 @@ header {
     margin-bottom: 20px;
 }
 
-#location{
+.search-bar .location{
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     margin-right: 0;
-    padding: 12px;
+    padding: 16px;
+}
 
+.location .fa-solid{
+    color: black
 }
 
 .citysearch{
