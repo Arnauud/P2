@@ -145,7 +145,7 @@ header {
     display: flex;
     flex-direction: row;
     height: 49px;
-    margin-bottom: 33px;
+    margin-bottom: 27px;
 }
 
 .search-bar .location{
@@ -155,7 +155,7 @@ header {
     padding: 16px;
 }
 
-.location .fa-solid{
+.location {
     color: black;
     width: 14px;
     height: 18px;
@@ -198,7 +198,8 @@ header {
 .filter-bar {
     display: flex;
     align-items: center;
-    gap: 15px;
+    row-gap: 25px;
+    column-gap: 20px;
     height: 50px;
 }
 
@@ -222,7 +223,7 @@ h3 {
     background-color: var(--filter-bg-color);
 }
 
-.fa-solid {
+.fa-solid, .fa{
     color: var(--main-color);
 }
 
@@ -238,8 +239,23 @@ h3 {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin:20px 0 20px 0;
+    margin:20px 0 34px 0;
 }
+
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid var(--filter-bg-color2);
+    margin-right: 11px;
+  }
+
+.fa-info {
+    width: 4px;
+    height: 10px;
+    margin: 3px 0 0 9px;
+    }
 
 a {
     color: inherit;
@@ -398,14 +414,19 @@ a {
 
 .activites{
     margin-top: 50px;
+    padding: 30px;
+}
+
+.activites-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .activites-card {
     margin-top: 30px;
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    column-gap: 20px;
+    display: flex;
+    column-gap: 30px;
 }
 
 .activites-card .card{
@@ -413,6 +434,7 @@ a {
     flex-direction: column;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding: 0; 
+    width: 298px;
 }
 
 .activites-card img {
@@ -438,25 +460,27 @@ a {
     background-color: var(--main-bg-color);
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    padding: 15px;
-    margin: 50px 100px;
+    /* padding: 15px; */
+    margin-top: 50px;
 
 }
 
-.bottom-left .bottom-center .bottom-right, a:first-child ul{
+.bottom-left .bottom-center .bottom-right, a:first-child li{
     font-size: 18px;
     font-weight: 700;
     font-family: Raleway;
     border-spacing: 40px;
+    
 }
 
 .bottom-left, .bottom-center, .bottom-right {
     font-size: 16px;
     font-weight: 400;
     font-family: Raleway;
+    margin: 10px 25px;
 }
 
-ul{
+li{
     padding: 10px;
 }
 
@@ -501,12 +525,10 @@ ul{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
     .activites-card img {
         height: 160px;
     }
-    .bottom-container {
-        margin: 50px 80px;
-    } 
 }
 
 /* Small devices (phones, less than 768px) */
@@ -532,7 +554,7 @@ ul{
     }
     .title{
         font-size: var(--cardtitle-font-size);
-        font-weight: var(--cardtitle-line-height);
+        font-weight: var(--cardtitle-font-weight);
         line-height: 19px;
         padding: 0 63px 25px 33px;
         display: grid;
