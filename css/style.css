@@ -432,8 +432,10 @@ a {
 .activites-card {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 24% 24% 24% 24%;
     column-gap: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 .activites-card .card{
@@ -579,7 +581,7 @@ footer a:first-child p{
     .title:hover { 
         color: var(--main-color);
         border-bottom-color:var(--main-color);
-        border-top:transparent;
+        border-top:none;
     }
 
     .info-group {
