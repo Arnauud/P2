@@ -541,14 +541,14 @@ footer a:first-child p{
 @media (max-width: 767.98px) {
     
     #logo-header {
-        padding: 30px;       
+        margin: 30px;       
     }
     
     header {
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 20px;
+        display: grid;
+        grid-template-rows: 100% 50%;
+        grid-template-columns: 100%;
+        justify-items: center;
     }
 
     .nav{
@@ -571,15 +571,15 @@ footer a:first-child p{
     .title{
         font-size: var(--cardtitle-font-size);
         font-weight: var(--cardtitle-font-weight);
-        line-height: 19px;
         padding: 0 63px 25px 33px;
+        border-bottom:2px solid transparent;
         display: grid;
     } 
 
     .title:hover { 
         color: var(--main-color);
-        border-bottom:2px solid var(--main-color);
-        border-top:none;
+        border-bottom-color:var(--main-color);
+        border-top:transparent;
     }
 
     .info-group {
