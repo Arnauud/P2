@@ -539,21 +539,32 @@ footer a:first-child p{
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {
+    
     #logo-header {
         padding: 30px;       
     }
-
+    
     header {
         align-items: center;
         flex-direction: column;
         justify-content: center;
         margin-top: 20px;
     }
+
     .nav{
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 50% 50%;
         margin: 0;
         margin-bottom: 15px;
         gap: 0;
     }
+
+    .nav:hover { 
+        color: var(--main-color);
+        border-bottom-color: var(--main-color);
+    }
+
     .search-bar {
         margin-top: 10px;
     }
@@ -628,12 +639,6 @@ footer a:first-child p{
         font-size: 13px;
     }
 
-    .card-subtitle p{
-
-    }
-
-
-
    .populaires-cards .card-rating .fa-solid {
         width: 10px;
     }
@@ -671,11 +676,13 @@ footer a:first-child p{
         color: white ;
     }
 
-    }
+
     .citysearch {
         padding-right: 82px;
     }
+   
     .fa-solid {
         padding-right: 0px;
 
     }
+}
