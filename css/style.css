@@ -185,6 +185,8 @@ header {
 }
 
 .btn-search {
+    display: flex;
+    flex-wrap: wrap;
     color: white;
     background-color: #0065FC;
     width: 105px;
@@ -193,6 +195,8 @@ header {
     font-size: 18px;
     font-weight: 700;
     gap: 10px;
+    align-content: center;
+    justify-content: center;
  }
 
 .btn-search .span {
@@ -365,7 +369,7 @@ a {
 
 .hebergements-cards .card-subtitle {
     margin: 0;
-    padding: 1px 0 1px 0;
+    padding: 3px 0 3px 0;
     font-size: 14px;
 }
 
@@ -551,6 +555,11 @@ footer a:first-child p{
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {
+    .headline {
+        width: 335px;
+        margin: 26px 10px 0 10px;
+    }
+
     #logo-header {
         margin: 30px;       
     }
@@ -581,11 +590,13 @@ footer a:first-child p{
     }
 
     .title{
-        font-size: var(--cardtitle-font-size);
-        font-weight: var(--cardtitle-font-weight);
-        padding: 0 63px 25px 33px;
-        border-bottom:2px solid transparent;
+        font-size: var(--info-font-size);
+        font-weight: var(--info-font-weight);
+        padding: 0 63px 34px 49px;
+        border-bottom:2px solid #F2F2F2;
         display: grid;
+        margin-bottom: -13px;
+        align-content: center;
     } 
 
     .title:hover { 
@@ -628,6 +639,7 @@ footer a:first-child p{
     .hebergements-and-populaires section {
         border-radius: 0;
         margin-top: 25px;
+        margin-bottom: 30px; 
     }
 
     .hebergements-and-populaires .fa-solid {
@@ -667,17 +679,19 @@ footer a:first-child p{
 
     section.hebergements {
         background-color: white;
+        padding: 0;        
+    }
 
+    .activites {
+        padding: 0 20px 0 20px;
     }
     .activites-card .card {
         margin-bottom: 30px;
-
     }
     .bottom-container {
         background-color: var(--main-bg-color);
         display: flex;
         flex-direction: column;
-        margin: 0 0px;
     }
 
     div.btn-search{
@@ -692,6 +706,7 @@ footer a:first-child p{
         border-radius: 15px;
         width: 20px;
         height: 20px;
+        font-size: 18px;
     }
 
     .hidden-image, .fa-magnifying-glass{
@@ -700,7 +715,7 @@ footer a:first-child p{
 
 
     .citysearch {
-        padding-right: 82px;
+        padding-right: 70px;
     }
    
     .fa-solid {
