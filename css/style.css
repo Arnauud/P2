@@ -612,7 +612,7 @@ footer a:first-child p{
     }
 
     .info-group {
-        margin: 35px 5px 10px 10px;
+        margin: 25px 0px 9px 16px;
     }
 
     .filter-bar{
@@ -717,6 +717,10 @@ footer a:first-child p{
 
     .hidden-image, .fa-magnifying-glass{
         color: white ;
+    }
+    
+    .input::placeholder{
+        color: black;
     }
 
 
