@@ -507,6 +507,11 @@ footer a:first-child p{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .main-container {
+        width: 100%;
+        margin: auto;
+    }
+
     .filter-bar{
         flex-wrap: wrap;
         margin-bottom: 75px;
