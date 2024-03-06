@@ -575,6 +575,8 @@ footer a:first-child p{
         grid-template-rows: 100% 50%;
         grid-template-columns: 100%;
         justify-items: center;
+        margin-left: 20px;
+
     }
 
     .nav{
@@ -685,11 +687,11 @@ footer a:first-child p{
 
     section.hebergements {
         background-color: white;
-        padding: 0;        
+        padding: 0px 15px 0 15px;
     }
 
     .activites {
-        padding: 0 20px 0 20px;
+        padding:0px 15px 0 15px;
     }
     .activites-card .card {
         margin-bottom: 30px;
@@ -719,7 +721,7 @@ footer a:first-child p{
         color: white ;
     }
     
-    .input::placeholder{
+    input::placeholder{
         color: black;
     }
 
