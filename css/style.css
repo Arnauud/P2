@@ -689,12 +689,8 @@ footer a:first-child p{
 
     section.hebergements {
         background-color: white;
-        padding: 0px 15px 0 15px;
     }
 
-    .activites {
-        padding:0px 15px 0 15px;
-    }
     .activites-card .card {
         margin-bottom: 30px;
     }
@@ -702,6 +698,7 @@ footer a:first-child p{
         background-color: var(--main-bg-color);
         display: flex;
         flex-direction: column;
+        width: 490px;
     }
 
     div.btn-search{
